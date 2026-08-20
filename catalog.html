@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Седона - Каталог</title>
+  </head>
+  <body>
+    
+    <header class="header">
+     <img class="logo" src="#" alt="Логотип">
+     <ul class="header-menu">
+       <li><a href="index.html">Главная</a></li>
+       <li><a href="#">О Седоне</a></li>
+       <li><a href="catalog.html">Гостиницы</a></li>
+     </ul>
+     <a href="#"><img src="#" alt="Поиск"></a>
+     <a href="#"><img src="#" alt="Избранное"></a>
+     <p class="favorites-count">10</p>
+     <button class="header-button">Хочу сюда!</button>
+    </header>
+	
+    <div class="sedona-hotels">
+      <h1>Гостиницы Седоны</h1>
+      <img src="#" alt="Home"><span> > </span> <span>Гостиницы</span><br>
+      <form action="https://echo.htmlacademy.ru" method="post">
+        <span>Инфраструктура:</span>
+        <label><input type="checkbox" name="pool">Бассейн</label>
+        <label><input type="checkbox" name="parking">Парковка</label>
+        <label><input type="checkbox" name="wifi">Wi-Fi</label><br>
+        <span>Тип жилья:</span>
+        <label><input type="radio" name="building-type" value="hotel">Гостиница</label>
+        <label><input type="radio" name="building-type" value="hostel">Мотель</label>
+        <label><input type="radio" name="building-type" value="apartment">Апартаменты</label><br>
+        <span>Стоимость, Р:</span>
+        <input type="text" name="from" placeholder="от">
+        <input type="text" name="until" placeholder="от">
+        <input type="range" min="0" max="12000" step="1" value="9000"><br>
+        <input type="submit" name="accept-btn" value="Применить">
+        <input type="reset" name="reset-btn" value="Сбросить">
+       </form>
+    </div>    
+
+    <div class="catalog-search">
+      <h3>Найдено гостиниц: <span class="hotels-count">38</span></h3>
+      <select class="catalog-search-sort">
+        <option value="cheap">Сначала дешевые</option>
+        <option value="popular">Сначала популярные</option>
+        <option value="expensive">Сначала дорогие</option>
+      </select>
+      <div class="catalog-search-view">
+        <a href="#" class="catalog-view-tiles">
+          <span class="visually-hidden">Показать плитки</span>
+        </a>
+        <a href="#" class="catalog-view-cards">
+          <span class="visually-hidden">Показать карточки</span>
+        </a>
+        <a href="#" class="catalog-view-list">
+          <span class="visually-hidden">Показать списком</span>
+        </a>
+      </div>
+      <div class="catalog-search-items">
+        <div class="catalog-item">
+          <img src="#" alt="Фото Amara Resort & Spa">
+          <h5>Amara Resort & Spa</h5>
+          <div class="catalog-item-container">
+            <p class="catalog-item-type">Гостиница</p>
+            <p class="catalog-item-price">От 4000 Р</p>
+            <a class="catalog-item-link" href="#">Подробнее</a>
+            <a class="catalog-item-favorite" href="#">В избранное</a>
+          </div>
+          <div class="catalog-item-stars four-stars">
+            <span class="visually-hidden">4 звезды</span>
+          </div>
+          <p class="catalog-item-ratio">Рейтинг: 8,5</p>
+        </div>
+        <div class="catalog-item">
+          <img src="#" alt="Фото Villas at Poco Diablo">
+          <h5>Villas at Poco Diablo</h5>
+          <div class="catalog-item-container">
+            <p class="catalog-item-type">Гостиница</p>
+            <p class="catalog-item-price">От 5000 Р</p>
+            <a class="catalog-item-link" href="#">Подробнее</a>
+            <a class="catalog-item-favorite" href="#">В избранное</a>
+          </div>
+          <div class="catalog-item-stars four-stars">
+            <span class="visually-hidden">4 звезды</span>
+          </div>
+          <p class="catalog-item-ratio">Рейтинг: 9,2</p>
+        </div>
+        <div class="catalog-item">
+          <img src="#" alt="Фото Desert Quail Inn">
+          <h5>Desert Quail Inn</h5>
+          <div class="catalog-item-container">
+            <p class="catalog-item-type">Гостиница</p>
+            <p class="catalog-item-price">От 2500 Р</p>
+            <a class="catalog-item-link" href="#">Подробнее</a>
+            <a class="catalog-item-favorite" href="#">В избранное</a>
+          </div>
+          <div class="catalog-item-stars three-stars">
+            <span class="visually-hidden">3 звезды</span>
+          </div>
+          <p class="catalog-item-ratio">Рейтинг: 6,9</p>
+        </div>
+        <div class="catalog-item">
+          <img src="#" alt="Фото GreenThree">
+          <h5>Amara Resort & Spa</h5>
+          <div class="catalog-item-container">
+            <p class="catalog-item-type">Гостиница</p>
+            <p class="catalog-item-price">От 1500 Р</p>
+            <a class="catalog-item-link" href="#">Подробнее</a>
+            <a class="catalog-item-favorite" href="#">В избранное</a>
+          </div>
+          <div class="catalog-item-stars two-stars">
+            <span class="visually-hidden">2 звезды</span>
+          </div>
+          <p class="catalog-item-ratio">Рейтинг: 5,0</p>
+        </div>
+        <ul class="catalog-items-pagination">
+          <li class="catalog-page catalog-page-active">1</li>
+          <li class="catalog-page">2</li>
+          <li class="catalog-page">3</li>
+          <li class="catalog-page">4</li>
+          <li class="catalog-page">...</li>
+          <li class="catalog-page">10</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="catalog-subscribe">
+      <h3>Подпишитесь на рассылку</h3>
+      <p>Только полезная информация и никакого спама,<br>честное бойскаутское!</p>
+      <form action="https://echo.htmlacademy.ru" method="post">
+        <input type="text" name="email" placeholder="Ваш e-mail">
+        <input type="submit" name="subscribe-btn" value="Подписаться">
+      </form>      
+    </div>
+
+    <footer class="footer">
+     <div class="social">
+       <img src="#" alt="VK">
+       <img src="#" alt="Telegram">
+       <img src="#" alt="Youtube">
+     </div>
+     <div class="phone"><a href="tel:+78128121212">+7 (812) 812 12 12</a></div>
+     <div class="html-academy">
+       <p>.html</p>
+       <p>academy</p>
+     </div>
+   </footer>
+
+  </body>
+</html>

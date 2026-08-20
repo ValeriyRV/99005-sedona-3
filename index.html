@@ -2,11 +2,122 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>HTML Academy: Седона</title>
+    <title>HTML Academy: Седона - Главная страница</title>
   </head>
   <body>
 
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">HTML и CSS. Профессиональная вёрстка сайтов</a>».</p>
+	 <header class="header">
+     <img class="logo" src="#" alt="Логотип">
+     <ul class="header-menu">
+       <li><a href="index.html">Главная</a></li>
+       <li><a href="#">О Седоне</a></li>
+       <li><a href="catalog.html">Гостиницы</a></li>
+     </ul>
+     <a href="#"><img src="#" alt="Поиск"></a>
+     <a href="#"><img src="#" alt="Избранное"></a>
+     <p class="favorites-count">10</p>
+     <button class="header-button">Хочу сюда!</button>
+   </header>
+
+   <main>
+     <h3>Седона - небольшой городок в Аризоне,<br>заслуживающий большего!</h3>
+     <p>Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!</p>
+   </main>
+
+   <div class="modal-search-window visually-hidden">
+     <h3>Поиск гостиницы в Седоне</h3>
+     <form class="modal-search-form" action="https://echo.htmlacademy.ru" method="post">
+       <span>Дата Заезда</span>
+       <input type="date" name="incoming-date" placeholder="27 апреля 2020"><br>
+       <span class="incoming-date-message visually-hidden">Мы не можем отправить вас в прошлое.</span><br>
+       <span>Дата Выезда</span>
+       <input type="date" name="outgoing-date" placeholder="1 сентября 2023"><br>
+       <span class="incoming-date-message visually-hidden">На эти даты еще есть свободные номера. Пока есть.</span><br>
+       <span>Взрослые</span>
+       <input type="number" name="adult-person-count" value="2"><br>
+       <span>Дети</span>
+       <input type="number" name="child-person-count" value="2"><br>
+       <input type="submit" name="">
+     </form>
+   </div>
+
+   <div class="features">
+     <div class="feature-1">
+       <h4>Настоящий<br>городок</h4>
+       <span class="separator"></span>
+       <p>Седона - не аттракцион для<br>туристов, там течёт своя<br>жизнь</p>
+     </div>
+     <div class="feature-2">
+       <h4>Небольшая<br>площадь</h4>
+       <span class="separator"></span>
+       <p>Все достопримечательности<br> находятся очень близко</p>
+     </div>
+     <div class="feature-3">
+       <h4>Красивая<br>дорога</h4>
+       <span class="separator"></span>
+       <p>Ехать в Седону из Лас-Вегаса<br>совсем не скучно!</p>
+     </div>
+     <div class="feature-4">
+       <h4>Мало<br>туристов</h4>
+       <span class="separator"></span>
+       <p>Большинство едет в Гранд<br>Каньон и толпится там</p>
+     </div>
+     <div class="feature-5">
+       <h4>Там есть<br>Мост Дьявола</h4>
+       <span class="separator"></span>
+       <p>Да по нему нужно пройти!<br>Если вы осмелитесь,<br>разумеется</p>
+     </div>
+   </div>
+
+   <div class="slogan">
+     <h3>Приезжайте в седону отдохнуть<br>в комфорте и уюте!</h3>
+     <p>Опытный персонал и качественное обслуживание!</p>
+   </div>
+
+   <div class="products">
+     <div class="apartment">
+       <img src="#" alt="Жилье">
+       <h4>Жильё</h4>
+       <p>Рекомендуем пожить<br>в настоящем мотеле,<br>как в кино!</p>
+     </div>
+     <div class="food">
+       <img src="#" alt="Еда">
+       <h4>Еда</h4>
+       <p>Всегда заказывайте<br>топовый фирменный бургер,<br>вы не разочаруетесь!</p>
+     </div>
+     <div class="souvenir">
+       <img src="#" alt="Сувениры">
+       <h4>Сувениры</h4>
+       <p>Не только китайского,<br>но и настоящего местного<br>производства!</p>
+     </div>
+   </div>
+
+   <div class="interest">
+     <h3>Заинтересовались?</h3>
+     <p>Укажите предполагаемые даты поездки,<br>и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+   </div>
+
+   <div class="subscribe">
+     <h3>Подпишитесь на рассылку</h3>
+     <p>Только полезная информация и никакого спама,<br>честное бойскаутское!</p>
+     <form class="subscribe-form" action="https://echo.htmlacademy.ru" method="post">
+      <input type="text" name="email" placeholder="Ваш e-mail">
+      <input type="submit" name="subscribe-btn" value="Подписаться">
+     </form>      
+   </div>
+   
+   <footer class="footer">
+     <div class="social">
+       <img src="#" alt="VK">
+       <img src="#" alt="Telegram">
+       <img src="#" alt="Youtube">
+     </div>
+     <div class="phone"><a href="tel:+78128121212">+7 (812) 812 12 12</a></div>
+     <div class="html-academy">
+       <p>.html</p>
+       <p>academy</p>
+     </div>
+   </footer>   
 
   </body>
 </html>

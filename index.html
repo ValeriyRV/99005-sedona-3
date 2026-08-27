@@ -5,47 +5,31 @@
     <title>HTML Academy: Седона - Главная страница</title>
   </head>
   <body>
-
-	 <header class="header">
-     <img class="logo" src="#" alt="Логотип">
+	 <header class="header">     
      <ul class="header-menu">
+       <li><a href="index.html"><img src="images/logos/sedona-logo.svg" width="140" height="70"></a></li>
        <li><a href="index.html">Главная</a></li>
        <li><a href="#">О Седоне</a></li>
        <li><a href="catalog.html">Гостиницы</a></li>
      </ul>
-     <a href="#"><img src="#" alt="Поиск"></a>
-     <a href="#"><img src="#" alt="Избранное"></a>
-     <p class="favorites-count">10</p>
-     <button class="header-button">Хочу сюда!</button>
+     <a href="#"><img src="images/icons/search.svg" alt="Поиск"></a>
+     <a href="#"><img src="images/icons/heart.svg" alt="Избранное"></a>
+     <p class="favorites-count">12</p>
+     <button class="button header-button" type="submit">Хочу сюда!</button>
    </header>
-
    <main>
+     <img class="main-bg-image" src="images/background/sedona-bg.jpg" width="1200" height="485" alt="Sedona, фоновое изображение">
+     <img class="main-bg-welcome" src="images/background/welcome.svg" width="458" height="352" alt="Welcome to the gorgeous Sedona">
+     <img class="main-bg-divider" src="images/background/divider.png" width="1200" height="57" alt="Разделитель">
      <h3>Седона - небольшой городок в Аризоне,<br>заслуживающий большего!</h3>
      <p>Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!</p>
    </main>
-
-   <div class="modal-search-window visually-hidden">
-     <h3>Поиск гостиницы в Седоне</h3>
-     <form class="modal-search-form" action="https://echo.htmlacademy.ru" method="post">
-       <span>Дата Заезда</span>
-       <input type="date" name="incoming-date" placeholder="27 апреля 2020"><br>
-       <span class="incoming-date-message visually-hidden">Мы не можем отправить вас в прошлое.</span><br>
-       <span>Дата Выезда</span>
-       <input type="date" name="outgoing-date" placeholder="1 сентября 2023"><br>
-       <span class="incoming-date-message visually-hidden">На эти даты еще есть свободные номера. Пока есть.</span><br>
-       <span>Взрослые</span>
-       <input type="number" name="adult-person-count" value="2"><br>
-       <span>Дети</span>
-       <input type="number" name="child-person-count" value="2"><br>
-       <input type="submit" name="">
-     </form>
-   </div>
-
    <div class="features">
      <div class="feature-1">
        <h4>Настоящий<br>городок</h4>
        <span class="separator"></span>
        <p>Седона - не аттракцион для<br>туристов, там течёт своя<br>жизнь</p>
+       <img class="image-feature-1" src="images/photos/photo-1.jpg" width="800" height="385" alt="Real town">
      </div>
      <div class="feature-2">
        <h4>Небольшая<br>площадь</h4>
@@ -63,61 +47,71 @@
        <p>Большинство едет в Гранд<br>Каньон и толпится там</p>
      </div>
      <div class="feature-5">
+       <img class="image-feature-5" src="images/photos/photo-2.jpg" width="800" height="385" alt="Bridge photo">
        <h4>Там есть<br>Мост Дьявола</h4>
        <span class="separator"></span>
        <p>Да по нему нужно пройти!<br>Если вы осмелитесь,<br>разумеется</p>
      </div>
    </div>
-
    <div class="slogan">
      <h3>Приезжайте в седону отдохнуть<br>в комфорте и уюте!</h3>
      <p>Опытный персонал и качественное обслуживание!</p>
    </div>
-
    <div class="products">
      <div class="apartment">
-       <img src="#" alt="Жилье">
+       <img src="images/icons/apartment-icon.svg" width="75" height="72" alt="Жилье">
        <h4>Жильё</h4>
        <p>Рекомендуем пожить<br>в настоящем мотеле,<br>как в кино!</p>
      </div>
      <div class="food">
-       <img src="#" alt="Еда">
+       <img src="images/icons/food-icon.svg" width="75" height="72" alt="Еда">
        <h4>Еда</h4>
        <p>Всегда заказывайте<br>топовый фирменный бургер,<br>вы не разочаруетесь!</p>
      </div>
      <div class="souvenir">
-       <img src="#" alt="Сувениры">
+       <img src="images/icons/souvenirs-icon.svg" width="75" height="72" alt="Сувениры">
        <h4>Сувениры</h4>
        <p>Не только китайского,<br>но и настоящего местного<br>производства!</p>
      </div>
    </div>
-
    <div class="interest">
      <h3>Заинтересовались?</h3>
      <p>Укажите предполагаемые даты поездки,<br>и мы покажем вам лучшие предложения гостиниц в Седоне</p>
    </div>
-
    <div class="subscribe">
+     <img src="images/background/subscribe-bg.jpg" width="1200" height="415" alt="Подпишитесь на рассылку">
      <h3>Подпишитесь на рассылку</h3>
      <p>Только полезная информация и никакого спама,<br>честное бойскаутское!</p>
      <form class="subscribe-form" action="https://echo.htmlacademy.ru" method="post">
       <input type="text" name="email" placeholder="Ваш e-mail">
-      <input type="submit" name="subscribe-btn" value="Подписаться">
+      <button class="button" type="submit">Подписаться</button>
      </form>      
-   </div>
-   
+   </div>   
    <footer class="footer">
      <div class="social">
-       <img src="#" alt="VK">
-       <img src="#" alt="Telegram">
-       <img src="#" alt="Youtube">
+       <img src="images/icons/vk.svg" alt="VK">
+       <img src="images/icons/telegram.svg" alt="Telegram">
+       <img src="images/icons/youtube.svg" alt="Youtube">
      </div>
      <div class="phone"><a href="tel:+78128121212">+7 (812) 812 12 12</a></div>
-     <div class="html-academy">
-       <p>.html</p>
-       <p>academy</p>
+     <img class="html-academy" src="images/logos/html-academy-logo.svg" width="75" height="72" alt="Логотип HTML Academy">       
      </div>
-   </footer>   
-
+   </footer>
+   <div class="modal-search-window visually-hidden">
+     <h3>Поиск гостиницы в Седоне</h3>
+     <form class="modal-search-form" action="https://echo.htmlacademy.ru" method="post">
+       <span>Дата Заезда</span>
+       <input type="date" name="incoming-date" placeholder="27 апреля 2020"><br>
+       <span class="incoming-date-message visually-hidden">Мы не можем отправить вас в прошлое.</span><br>
+       <span>Дата Выезда</span>
+       <input type="date" name="outgoing-date" placeholder="1 сентября 2023"><br>
+       <span class="incoming-date-message visually-hidden">На эти даты еще есть свободные номера. Пока есть.</span><br>
+       <span>Взрослые</span>
+       <input type="number" name="adult-person-count" value="2"><br>
+       <span>Дети</span>
+       <input type="number" name="child-person-count" value="2"><br>
+       <button class="button modal-button" type="submit">Найти</button>
+     </form>
+   </div>
   </body>
 </html>

@@ -6,23 +6,40 @@
 	<link rel="stylesheet" href="styles/styles.css">
   </head>
   <body>    
-    <header class="header">   
-     <section class="header-logo">
-       <a href="index.html"><img src="images/logos/sedona-logo.svg"></a>
-     </section>
-     <nav class="header-navigation">  
-       <ul class="header-menu">       
-         <li class="header-menu-item"><a href="index.html">Главная</a></li>
-         <li class="header-menu-item"><a href="#">О Седоне</a></li>
-         <li class="header-menu-item"><a href="catalog.html">Гостиницы</a></li>
-       </ul>
-       <ul class="header-search">
-         <li class="header-search-item"><a href="#"><img src="images/icons/search.svg" alt="Поиск"></a></li>
-         <li class="header-search-item header-favorites"><a href="#"><img src="images/icons/heart.svg" alt="Избранное"></a>
-          <span class="header-favorites-circle"></span>
-          <p class="header-favorites-count">12</p></li>       
-       </ul>
-       <button class="button header-button" type="submit">Хочу сюда!</button>
+     <!-- Шапка  -->
+     <header class="header">        
+      <a class="header-logo" href="index.html">
+        <img src="images/logos/sedona-logo.svg" alt="Логотип сайта Седона">
+      </a>     
+      <nav class="header-navigation">  
+        <ul class="header-menu">       
+          <li class="header-menu-item">
+            <a href="index.html">Главная</a>
+          </li>
+          <li class="header-menu-item">
+            <a href="#">О Седоне</a>
+          </li>
+          <li class="header-menu-item">
+            <a href="catalog.html">Гостиницы</a>
+          </li>
+        </ul>
+        <ul class="header-search">
+          <li class="header-search-item">
+            <a href="#"><img src="images/icons/search.svg" alt="Поиск">
+              <span class="visually-hidden">Поиск</span>
+            </a>
+          </li>
+          <li class="header-search-item header-favorites">
+            <a href="#">
+              <img src="images/icons/heart.svg" alt="Избранное">
+              <span class="visually-hidden">Избранное</span>
+              <span class="header-favorites-circle">12</span>              
+            </a>                        
+          </li>               
+          <li class="header-search-item">
+            <button class="button header-button" type="submit">Хочу сюда!</button>
+          </li>
+        </ul>
      </nav>     
    </header>
    <main class="main">
@@ -59,7 +76,8 @@
         <option value="popular">Сначала популярные</option>
         <option value="expensive">Сначала дорогие</option>
       </select>
-      <img class="catalog-search-image" src="selector-arrow.svg" width="12" height="7" alt="Стрелка выпадающего списка">
+      <!-- <img class="catalog-search-image" src="images/icons/selector-arrow.svg" width="12" height="7" alt="Стрелка выпадающего списка"> -->
+      <span class="catalog-search-image"></span>
       <section class="catalog-search-view">
         <a href="#" class="catalog-view-tiles">
           <span class="visually-hidden">Показать плитки</span>
@@ -149,14 +167,33 @@
     </section>
     </main>
     <footer class="footer">
-     <section class="social">
-       <img src="images/icons/vk.svg" alt="VK">
-       <img src="images/icons/telegram.svg" alt="Telegram">
-       <img src="images/icons/youtube.svg" alt="Youtube">
-     </section>
-     <section class="phone"><a href="tel:+78128121212">+7 (812) 812 12 12</a></section>
-     <img class="html-academy" src="images/logos/html-academy-logo.svg" width="75" height="72" alt="Логотип HTML Academy">       
-     </section>
+      <section class="footer-container">
+        <ul class="footer-social">
+          <li>
+            <a href="#" class="footer-social-link icon-vk">
+              <span class="visually-hidden">VK</span>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="footer-social-link icon-telegram">
+              <span class="visually-hidden">Telegram</span>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="footer-social-link icon-youtube">
+              <span class="visually-hidden">Youtube</span>
+            </a>
+          </li>
+        </ul>
+        <section class="main-section-text footer-phone">
+          <a class="footer-phone-number" href="tel:+78128121212">+7 (812) 812 12 12</a>
+        </section>
+       <section class="footer-logo">
+        <a class="footer-link-htmlacademy" href="https://htmlacademy.ru/intensive/htmlcss">
+          <span class="visually-hidden">HTML-Academy</span>          
+        </a>
+       </section>
+     </section>         
    </footer>
   </body>
 </html>

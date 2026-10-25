@@ -86,6 +86,11 @@ body {
   background-color: #e5e5e5;
 }
 
+.button:disabled:hover {
+  color: rgba(255, 255, 255, 0.3);
+  background-color: #e5e5e5;
+}
+
 .button-large {
   font-size: 20px;
   line-height: 36px;
@@ -134,6 +139,14 @@ body {
 }
 
 .button-transparent {
+  background-color: transparent;
+}
+
+.button-transparent:disabled {
+  background-color: transparent;
+}
+
+.button-transparent:disabled:hover {
   background-color: transparent;
 }
 

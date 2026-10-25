@@ -142,14 +142,6 @@ body {
   background-color: transparent;
 }
 
-.button-transparent:disabled {
-  background-color: transparent;
-}
-
-.button-transparent:disabled:hover {
-  background-color: transparent;
-}
-
 .button-transparent:hover {
   opacity: 0.6;
 }
@@ -169,6 +161,10 @@ body {
   outline: none;
   background-color: transparent;
   opacity: 0.1;
+}
+
+.button-transparent:disabled:hover {
+  background-color: transparent;
 }
 
 /* Стили невидимых элементов */
@@ -956,7 +952,6 @@ body {
 
 .modal-form-input-counter::-webkit-outer-spin-button,
 .modal-form-input-counter::-webkit-inner-spin-button {
-  -webkit-appearance: none;
   appearance: none;
   margin: 0;
 }
@@ -1286,7 +1281,7 @@ body {
 }
 
 .catalog-select-prices-field[type="number"] {
-  -moz-appearance: textfield;
+  appearance: textfield;
 }
 
 .catalog-select-prices-min {

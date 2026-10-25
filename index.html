@@ -8,7 +8,7 @@
 </head>
 <body>
   <div class="page-container">
-    <header class="header">
+    <header class="header" data-test="header">
       <a class="header-logo" href="index.html">
         <img src="images/logos/sedona-logo.svg" width="140" height="70" alt="Логотип сайта Седона">
       </a>
@@ -42,53 +42,55 @@
         </div>
       </nav>
     </header>
-    <main class="main">
-      <section class="presentation">
-        <div class="presentation-welcome">
-          <img class="presentation-welcome-image" src="images/background/welcome.svg" width="458" height="352" alt="Welcome to the gorgeous Sedona">
+    <main class="main" data-test="main">
+      <section class="hero" data-test="hero">
+        <div class="hero-welcome">
+          <img class="hero-welcome-image" src="images/background/welcome.svg" width="458" height="352" alt="Welcome to the gorgeous Sedona">
           <span class="visually-hidden">Изображение - Добро пожаловать в прекрасную Седону!</span>
+        </div>        
+      </section>
+      <section class="advantages" data-test="advantages">
+        <div class="advantages-description">
+          <h1 class="page-title advantages-description-title">Седона &mdash; небольшой городок в Аризоне, заслуживающий большего!</h1>
+          <p class="page-text advantages-description-text">Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!</p>
         </div>
-        <div class="presentation-description">
-          <h1 class="page-title presentation-description-title">Седона &mdash; небольшой городок в Аризоне, заслуживающий большего!</h1>
-          <p class="page-text presentation-description-text">Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!</p>
+        <div class="advantages-items">
+          <div class="advantages-item">
+            <h2 class="page-title advantages-item-title">Настоящий городок</h2>
+            <span class="advantages-item-separator"></span>
+            <p class="page-text advantages-item-text">Седона&nbsp;&mdash;&nbsp;не&nbsp;аттракцион&nbsp;для туристов,&nbsp;там&nbsp;течёт&nbsp;своя жизнь</p>
+          </div>
+          <div class="advantages-item advantages-item-wide-img">
+            <img class="image-feature-1" src="images/photos/photo-1.jpg" width="800" height="385" alt="Real town">
+            <span class="visually-hidden">Изображение города</span>
+          </div>
+          <div class="advantages-item">
+            <h3 class="page-title advantages-item-title">Небольшая площадь</h3>
+            <span class="advantages-item-separator"></span>
+            <p class="page-text advantages-item-text">Все&nbsp;достопримечательности находятся&nbsp;очень&nbsp;близко</p>
+          </div>
+          <div class="advantages-item">
+            <h3 class="page-title advantages-item-title">Красивая дорога</h3>
+            <span class="advantages-item-separator"></span>
+            <p class="page-text advantages-item-text">Ехать&nbsp;в&nbsp;Седону&nbsp;из&nbsp;Лас-Вегаса совсем&nbsp;не&nbsp;скучно!</p>
+          </div>
+          <div class="advantages-item">
+            <h3 class="page-title advantages-item-title">Мало туристов</h3>
+            <span class="advantages-item-separator"></span>
+            <p class="page-text advantages-item-text">Большинство&nbsp;едет&nbsp;в&nbsp;Гранд Каньон&nbsp;и&nbsp;толпится&nbsp;там</p>
+          </div>
+          <div class="advantages-item advantages-item-wide-img">
+            <img class="image-feature-5" src="images/photos/photo-2.jpg" width="800" height="385" alt="Bridge photo">
+            <span class="visually-hidden">Изображение достопримечательности Мост Дьявола</span>
+          </div>
+          <div class="advantages-item">
+            <h3 class="page-title advantages-item-title">Там&nbsp;есть Мост&nbsp;Дьявола</h3>
+            <span class="advantages-item-separator"></span>
+            <p class="page-text advantages-item-text">Да,&nbsp;по&nbsp;нему&nbsp;можно&nbsp;пройти! Если&nbsp;вы&nbsp;осмелитесь, разумеется</p>
+          </div>
         </div>
       </section>
-      <section class="advantages">
-        <div class="advantages-item">
-          <h2 class="page-title advantages-item-title">Настоящий городок</h2>
-          <span class="advantages-item-separator"></span>
-          <p class="page-text advantages-item-text">Седона&nbsp;&mdash;&nbsp;не&nbsp;аттракцион&nbsp;для туристов,&nbsp;там&nbsp;течёт&nbsp;своя жизнь</p>
-        </div>
-        <div class="advantages-item advantages-item-wide-img">
-          <img class="image-feature-1" src="images/photos/photo-1.jpg" width="800" height="385" alt="Real town">
-          <span class="visually-hidden">Изображение города</span>
-        </div>
-        <div class="advantages-item">
-          <h3 class="page-title advantages-item-title">Небольшая площадь</h3>
-          <span class="advantages-item-separator"></span>
-          <p class="page-text advantages-item-text">Все&nbsp;достопримечательности находятся&nbsp;очень&nbsp;близко</p>
-        </div>
-        <div class="advantages-item">
-          <h3 class="page-title advantages-item-title">Красивая дорога</h3>
-          <span class="advantages-item-separator"></span>
-          <p class="page-text advantages-item-text">Ехать&nbsp;в&nbsp;Седону&nbsp;из&nbsp;Лас-Вегаса совсем&nbsp;не&nbsp;скучно!</p>
-        </div>
-        <div class="advantages-item">
-          <h3 class="page-title advantages-item-title">Мало туристов</h3>
-          <span class="advantages-item-separator"></span>
-          <p class="page-text advantages-item-text">Большинство&nbsp;едет&nbsp;в&nbsp;Гранд Каньон&nbsp;и&nbsp;толпится&nbsp;там</p>
-        </div>
-        <div class="advantages-item advantages-item-wide-img">
-          <img class="image-feature-5" src="images/photos/photo-2.jpg" width="800" height="385" alt="Bridge photo">
-          <span class="visually-hidden">Изображение достопримечательности Мост Дьявола</span>
-        </div>
-        <div class="advantages-item">
-          <h3 class="page-title advantages-item-title">Там&nbsp;есть Мост&nbsp;Дьявола</h3>
-          <span class="advantages-item-separator"></span>
-          <p class="page-text advantages-item-text">Да,&nbsp;по&nbsp;нему&nbsp;можно&nbsp;пройти! Если&nbsp;вы&nbsp;осмелитесь, разумеется</p>
-        </div>
-      </section>
-      <section class="features">
+      <section class="features" data-test="service">
         <div class="features-slogan">
           <h2 class="page-title features-slogan-title">Приезжайте в седону отдохнуть в комфорте и уюте!</h2>
           <p class="page-text features-slogan-text">Опытный персонал и качественное обслуживание!</p>
@@ -112,13 +114,13 @@
           </div>
         </div>
       </section>
-      <section class="interest">
+      <section class="interest" data-test="search">
         <h2 class="page-title interest-title">Заинтересовались?</h2>
         <p class="page-text interest-text">Укажите&nbsp;предполагаемые&nbsp;даты&nbsp;поездки, и&nbsp;мы&nbsp;покажем&nbsp;вам&nbsp;лучшие
           предложения гостиниц в Седоне</p>
         <button class="interest-button button button-brown">Поиск гостиницы в Седоне</button>
       </section>
-      <section class="subscribtion">
+      <section class="subscribtion" data-test="subscribe">
         <h2 class="page-title subscribtion-title">Подпишитесь на рассылку</h2>
         <p class="page-text subscribtion-text">Только полезная информация и никакого спама, честное бойскаутское!
         </p>
@@ -129,7 +131,7 @@
         </form>
       </section>
     </main>
-    <footer class="footer">
+    <footer class="footer" data-test="footer">
       <div class="footer-container">
         <ul class="list-global footer-social">
           <li>

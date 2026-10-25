@@ -8,7 +8,7 @@
 </head>
 <body>
   <div class="page-container">
-    <header class="header">
+    <header class="header" data-test="header">
       <a class="header-logo" href="index.html">
         <img src="images/logos/sedona-logo.svg" width="140" height="70" alt="Логотип сайта Седона">
       </a>
@@ -42,7 +42,7 @@
         </div>
       </nav>
     </header>
-    <main class="main">
+    <main class="main" data-test="main">
       <section class="catalog-filter">
         <h1 class="page-title catalog-filter-title">Гостиницы Седоны</h1>
         <ul class="list-global catalog-filter-breadcrubs">
@@ -55,7 +55,7 @@
             <p class="catalog-filter-breadcrubs-current">Гостиницы</p>
           </li>
         </ul>
-        <form class="catalog-select" action="https://echo.htmlacademy.ru" method="post">
+        <form class="catalog-select" action="https://echo.htmlacademy.ru" method="post" data-test="filter">
           <span class="visually-hidden">Выбор параметров поиска гостиниц</span>
           <div class="catalog-select-checkers">
             <fieldset class="catalog-select-fieldset">
@@ -135,12 +135,12 @@
               </div>
           </div>
           <div class="catalog-select-buttons">
-            <button class="catalog-select-button-submit button button-blue" type="submit" name="accept-btn">Применить</button>
-            <button class="catalog-select-button-reset button button-transparent" type="reset" name="reset-btn">Сбросить</button>
+            <button class="catalog-select-button-submit button button-blue" type="submit">Применить</button>
+            <button class="catalog-select-button-reset button button-transparent" type="reset">Сбросить</button>
           </div>
         </form>
       </section>
-      <section class="catalog-search">
+      <section class="catalog-search" data-test="catalog">
           <span class="visually-hidden">Результаты поиска гостиниц</span>
           <div class="catalog-search-header">
             <h1 class="page-title catalog-search-title">Найдено гостиниц: 38</h1>
@@ -248,7 +248,7 @@
           </li>
         </ul>
       </section>
-      <section class="catalog-subscribtion">
+      <section class="catalog-subscribtion" data-test="subscribe">
         <h3 class="page-title catalog-subscribtion-title">Подпишитесь на рассылку</h3>
         <p class="page-text catalog-subscribtion-text">Только&nbsp;полезная&nbsp;информация&nbsp;и&nbsp;никакого&nbsp;спама, честное&nbsp;бойскаутское!</p>
         <form class="catalog-subscribtion-form" action="https://echo.htmlacademy.ru" method="post">

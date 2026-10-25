@@ -324,7 +324,7 @@ body {
 }
 
 /* Стили для блока main */
-.presentation-welcome {
+.hero-welcome {
   display: flex;
   flex-wrap: wrap;
   min-height: 485px;
@@ -336,13 +336,13 @@ body {
   background-size: cover cover;
 }
 
-.presentation-welcome-image {
+.hero-welcome-image {
   margin-top: 50px;
   margin-left: auto;
   margin-right: auto;
 }
 
-.presentation-description {
+.advantages-description {
   min-height: 282px;
   display: flex;
   flex-direction: column;
@@ -350,7 +350,7 @@ body {
   text-align: center;
 }
 
-.presentation-description-title {
+.advantages-description-title {
   margin-top: 69px;
   max-width: 650px;
   font-size: 30px;
@@ -358,12 +358,12 @@ body {
   text-transform: uppercase;
 }
 
-.presentation-description-text {
+.advantages-description-text {
   margin-top: 25px;
   max-width: 700px;
 }
 
-.advantages {
+.advantages-items {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(3, 1fr);
